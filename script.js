@@ -46,7 +46,7 @@ Array.from(boxes).forEach((element)=>{
             turn = changeTurn()
             checkWin()
             if(!gameover){
-                document.getElementsByClassName("info")[0].innerText = "Turn for " + turn;
+                document.getElementsByClassName("info")[0].innerText = "Turn for" + turn;
             }
         }
     })
@@ -65,3 +65,4 @@ reset.addEventListener("click", (element)=>{
     document.getElementsByClassName("info")[0].innerText = "Turn for" + turn;
 
 })
+
