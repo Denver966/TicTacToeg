@@ -58,8 +58,6 @@ Array.from(boxes).forEach((element) => {
         }
     })
 })
-
-
 //add event listner to reset
 reset.addEventListener("click", (element) => {
     let boxtexts = document.querySelectorAll('.boxtext')
