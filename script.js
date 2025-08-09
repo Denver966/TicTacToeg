@@ -48,6 +48,7 @@ let boxes = document.getElementsByClassName('box');
 Array.from(boxes).forEach((element) => {
     let boxtext = element.querySelector('.boxtext')
     element.addEventListener("click", () => {
+        if(gameover) return;
         if (boxtext.innerText === '') {
             boxtext.innerText = turn;
             turn = changeTurn()
@@ -72,3 +73,4 @@ reset.addEventListener("click", (element) => {
     document.querySelector(".line").style.width = "0";
     document.getElementsByClassName("info")[0].innerText = "Turn for" + turn;
 })
+
